@@ -1,0 +1,138 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+}
+
+.header {
+  background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center; 
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+}
+
+.header .container {
+  position: relative;
+  top: 200px;
+}
+.header .container h1 span {
+  font-family: 'Lobster', cursive;
+}
+
+
+.header h1 {
+  color: #fff;
+  line-height: 100px; 
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  animation: drop 1.5s ease; 
+}
+
+@keyframes drop {
+  0%   { opacity: 0;
+         transform: translateY(-80px);
+       }
+  100% { opacity: 1;
+         transform: translateY(0px);
+       }
+}
+
+
+
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+
+.header p {
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase; 
+  animation: drop 1.5s ease; 
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+  animation: drop 1.5s ease
+}
+
+.nav { 
+  background: #000;
+  height: 50px; 
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 -250px 0 0; 
+  padding: 0;
+}
+
+.nav ul li a {
+  float: right;
+  color: #fff;
+  display: inline-block; 
+  height: 50px;
+  line-height: 50px; 
+  list-style: none;
+  padding: 0 20px;
+  transition: background 1s; 
+  text-decoration: none;
+  }
+
+
+
+.header .container .btn {
+  transition: background 1s; 
+}
+
+.btn:hover, .nav ul li a:hover {
+  color: black;
+  background: lightblue;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+.main .container {
+  margin: 80px auto;
+}
+
+
+
+
+
+.footer { 
+  background: #000;
+  height: 80px; 
+  padding-bottom: 50px;
+}
+
+.footer p { 
+  color: #fff;
+  font-size: 14px;  
+  height: 80px; 
+  line-height: 80px;
+  margin: 0;  
+}
+
